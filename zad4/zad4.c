@@ -14,7 +14,7 @@ int main()
   }
   for(i=0; i<a; i++)
   {
-    printf("%s", tab[i]);
+    printf("%d", tab[i]);
   }
 
 

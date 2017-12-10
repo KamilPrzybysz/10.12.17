@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int funkcja()
+int funkcja(int *wynik)
 {
   int w;
    printf("Liczba wierszy: ");
@@ -45,14 +45,15 @@ for(i=0; i<w; i++)
 {
   iloczyn+=tab[i]*tab2[i];
 }
-
-printf("Iloczyn skalarny tych liczb to: %d\n", iloczyn);
+*wynik=iloczyn;
 }
 
 int main()
 {
 
-  funkcja();
+  int wynik=0;
+  funkcja(&wynik);
+  printf("Wynik: %d\n", wynik);
 
 
   return 0;
