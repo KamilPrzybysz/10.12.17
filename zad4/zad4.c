@@ -1,23 +1,27 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+int returnFirstNonWhite()
+{
+    int ch;
+    ch = getchar();
+    while (ch == 32)
+    {
+        ch= getchar();
+    }
+    return ch;
+}
+
+
+
+
 int main()
 {
-  int a=1;
-  char *tab;
-  tab=(char*)malloc(a*sizeof(char )); //alokacja pamieci
-  int i;
-  for(i=0; i<a; i++)
-  {
-    printf("Wpisz napis: ");
-    scanf("%s", &tab[i]);
-  }
-  for(i=0; i<a; i++)
-  {
-    printf("%d", tab[i]);
-  }
 
+  printf("wprowadź ciąg znaków: \n");
+    char myChar = returnFirstNonWhite();
 
+    printf("Znak: %c\n",myChar);
 
   return 0;
 }
