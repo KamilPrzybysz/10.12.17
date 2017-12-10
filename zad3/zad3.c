@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
+int funkcja()
 {
   int w;
    printf("Liczba wierszy: ");
@@ -47,6 +47,12 @@ for(i=0; i<w; i++)
 }
 
 printf("Iloczyn skalarny tych liczb to: %d\n", iloczyn);
+}
+
+int main()
+{
+
+  funkcja();
 
 
   return 0;
